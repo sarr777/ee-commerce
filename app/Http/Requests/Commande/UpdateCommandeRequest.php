@@ -1,0 +1,25 @@
+<?php
+declare(strict_types=1);
+
+namespace App\Http\Requests\Commande;
+
+use Illuminate\Foundation\Http\FormRequest;
+
+class UpdateCommandeRequest extends FormRequest
+{
+    public function authorize(): bool
+    {
+        return true;
+    }
+
+    public function rules(): array
+    {
+        return [
+            'date' => ['sometimes', 'date'],
+            'code' => ['sometimes', 'string', 'max:255'],
+            'payment' => ['sometimes', 'string', 'max:255'],
+            'libelle' => ['sometimes', 'string', 'max:255'],
+            'statut' => ['sometimes', 'string', 'max:255'],
+        ];
+    }
+}

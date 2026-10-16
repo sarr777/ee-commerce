@@ -1,0 +1,17 @@
+# Use this workspace to collaborate
+workspace:
+  id: 3b5cde77-48fd-41aa-86f7-18a487767789
+
+localResources:
+  collections:
+    - ../Category_collection.json
+    - ../Commande_collection.json
+    - ../ElementCommande_collection.json
+    - ../Post_collection.json
+    - ../Produit_collection.json
+    - ../Service_collection.json
+    - ../_ALL_collection.json
+
+cloudResources:
+  collections:
+    ../postman/collections/API Global Collection: 711d88c3-3acb-4aaf-8f40-99342baa064e

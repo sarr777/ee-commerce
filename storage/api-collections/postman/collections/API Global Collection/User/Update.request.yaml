@@ -1,0 +1,16 @@
+$kind: http-request
+url: "{{base_url}}/api/users/1"
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "name": "exemple",
+        "email": "exemple",
+        "email_verified_at": "2025-01-01 12:00:00",
+        "password": "exemple",
+        "remember_token": "exemple"
+    }
+order: 4000

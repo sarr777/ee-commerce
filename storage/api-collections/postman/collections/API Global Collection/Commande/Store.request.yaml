@@ -1,0 +1,16 @@
+$kind: http-request
+url: "{{base_url}}/api/commandes"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "date": "2025-01-01",
+        "code": "exemple",
+        "payment": "exemple",
+        "libelle": "exemple",
+        "statut": "exemple"
+    }
+order: 2000

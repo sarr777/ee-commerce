@@ -1,0 +1,15 @@
+$kind: http-request
+url: "{{base_url}}/api/element-commandes"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "prix": 1,
+        "quantite": 1,
+        "produit_id": 1,
+        "commande_id": 1
+    }
+order: 2000

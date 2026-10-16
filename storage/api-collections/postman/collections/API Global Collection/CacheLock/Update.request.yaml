@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{base_url}}/api/cache-locks/1"
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "key": "exemple",
+        "owner": "exemple",
+        "expiration": 1
+    }
+order: 4000

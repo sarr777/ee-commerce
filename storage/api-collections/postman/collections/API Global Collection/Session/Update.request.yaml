@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{base_url}}/api/sessions/1"
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "id": "exemple",
+        "user_id": 1,
+        "ip_address": "exemple",
+        "user_agent": "exemple",
+        "payload": "exemple",
+        "last_activity": 1
+    }
+order: 4000
